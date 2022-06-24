@@ -1,0 +1,304 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    background: rgba(2, 2, 9, 0.824);
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.navbar_brand a img {
+    width: 100px;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+* {
+    outline: none !important;
+}
+
+a {
+    color: rgb(243, 236, 40);
+    text-decoration: none;
+}
+
+.header-left {
+    width: 70px;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    background: #06060d;
+    border-right: 1px solid rgba(11, 11, 19, 0.1);
+    z-index: 99999;
+}
+
+.header-left .top a {
+    background: rgba(243, 236, 40);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 40px;
+    height: 80px;
+    width: 70px;
+    line-height: 80px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.header-left .nav-menu {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.nav-menu li+li {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-link {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: ease all 0.35;
+}
+
+.nav-link i {
+    font-size: 32px;
+    width: 35px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.nav-link i:hover {
+    color: #f4ef4f;
+}
+
+.d-flex .toggle_menu {
+    background: none;
+    border: none;
+}
+
+.mob-header {
+    padding: 15px;
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+}
+
+.toggle_menu {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    margin-left: 15px;
+    background: #ffc107;
+    border: none;
+    margin-left: auto;
+}
+
+.toggle_menu span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 25px;
+    height: 2px;
+    margin: auto;
+    background: #ffc107 !important;
+    color: white;
+    box-shadow: 0px -8px 0 0 currentColor, 0px 8px 0 0 currentColor;
+}
+
+@media (max-width: 838px) {
+    .mob-header {
+        display: block;
+    }
+    .header-left {
+        transition: ease all 0.35;
+        left: -200px;
+        z-index: 222;
+    }
+    .header-left.menu-open {
+        left: 0;
+    }
+    .margin-left {
+        margin-left: 80px;
+    }
+}
+
+.banner {
+    overflow: hidden;
+    position: relative;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    right: -20vh;
+    bottom: -20vh;
+    width: 120vh;
+    height: 120vh;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1
+}
+
+.top-fixed {
+    position: absolute;
+    padding: 30px 50px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1
+}
+
+.info {
+    margin-left: 195px;
+}
+
+.info label {
+    margin: 0;
+    color: white;
+    font-weight: 400;
+}
+
+.info label+label {
+    margin-left: 40px;
+}
+
+.social {
+    margin-left: auto;
+    font-size: 20px;
+}
+
+.social a i {
+    margin-right: 10px;
+    color: white;
+    width: 43px;
+    height: 43px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.banner .full-screen {
+    min-height: 100vh;
+}
+
+.banner .me {
+    position: absolute;
+    right: 0;
+    width: 50vw;
+    height: 100%;
+    background-size: cover;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.banner .container .box {
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+.banner .container .box h6 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 20px;
+}
+
+.banner .container .box h1 {
+    color: white;
+    font-size: 80px;
+    line-height: 1;
+    margin: 0 0 20px;
+}
+
+.box .lead {
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.box .desc {
+    max-width: 450px;
+    color: white;
+}
+
+.btn-bar {
+    padding-top: 10px;
+}
+
+.btn-bar a {
+    color: white;
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    padding-left: 0;
+    transition: ease all;
+}
+
+.btn-bar a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    widows: 0;
+    height: 0;
+    background: currentColor;
+    transition: ease all 0.3;
+}
+
+.btn-bar a:hover {
+    padding-left: 45px;
+}
+
+.btn-bar a:hover:after {
+    width: 40px;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .banner .top-fixed {
+        display: none !important;
+    }
+    .box h1 {
+        font-size: 50px !important;
+    }
+    .box h6 {
+        font-size: 18px!important;
+        margin: 0 0 10px !important;
+    }
+    .box .lead {
+        font-size: 16px!important;
+        margin-bottom: 15px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .banner .me {
+        opacity: 0.4;
+        width: 80vw;
+    }
+}
