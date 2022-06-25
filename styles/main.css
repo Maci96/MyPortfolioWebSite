@@ -1,5 +1,5 @@
 html {
-    overflow: hidden;
+    height: 100%;
 }
 
 body {
@@ -7,6 +7,7 @@ body {
     font-family: sans-serif;
     font-size: 15px;
     font-weight: 400;
+    min-height: 1500px;
 }
 
 .navbar_brand a img {
@@ -203,7 +204,7 @@ a {
     position: absolute;
     right: 0;
     width: 50vw;
-    height: 100%;
+    height: 95%;
     background-size: cover;
     top: 0;
     background-repeat: no-repeat;
@@ -301,4 +302,218 @@ a {
         opacity: 0.4;
         width: 80vw;
     }
+}
+
+
+/* Biography */
+
+
+/***********************/
+
+.about-me img {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    position: relative;
+}
+
+.about-me .social-icons {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+}
+
+.about-me .social-icons a {
+    width: 45px;
+    height: 45px;
+    line-height: 41px;
+    background: rgb(24, 21, 21);
+    border: 2px solid #0b0909;
+    color: #d4d4df;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 5px;
+    transition: ease all 0.35s;
+    transform: scale(1);
+    margin-top: -160px;
+}
+
+.social-icons a i {
+    line-height: inherit;
+}
+
+.social-icons a:nth-child(1) {
+    top: -25px;
+}
+
+.social-icons a:nth-child(2) {
+    top: -8px;
+}
+
+.social-icons a:nth-child(4) {
+    top: -8px;
+}
+
+.social-icons a:nth-child(5) {
+    top: -25px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    background: rgb(227, 240, 43);
+}
+
+.info {
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+    width: 300px;
+    margin-left: 7%;
+}
+
+.info h3 {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.info p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.title h3 {
+    color: white;
+}
+
+.info-list {
+    padding-top: 15px;
+    color: white;
+}
+
+.info-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.info-list li {
+    padding: 4px 0;
+}
+
+.info-list label {
+    color: white;
+    margin: 0;
+}
+
+
+/* What i can do  */
+
+
+/***********************************/
+
+.separated {
+    background-image: url(../imgs/border.png);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-repeat: repeat-x;
+    background-size: auto 6px;
+    background-position: center;
+}
+
+.box1 {
+    background: rgb(6, 5, 5);
+    padding: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1
+}
+
+.box1:before {
+    content: "";
+    position: absolute;
+    top: -220px;
+    left: -220px;
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+    z-index: -1;
+    background: #0b0b13;
+    transition: cubic-bezier(0.39, 0.58, 0.57, 1) all 0.5s;
+}
+
+.box1:after {
+    content: "";
+    position: absolute;
+    top: -72px;
+    left: -40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: -2;
+    background-color: #F5d020;
+    background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+    transition: cubic-bezier(0.39, 0.58, 0.57, 1) all 0.15s;
+}
+
+.box1:hover:before {
+    top: -72px;
+    left: -40px;
+    border-radius: 50%;
+}
+
+.box1:hover:after {
+    content: "";
+    width: 120%;
+    left: -10%;
+    top: -10%;
+    height: 120%;
+    border-radius: 0;
+    transition: cubic-bezier(0.39, 0.58, 0.57, 1) all 0.55s;
+}
+
+.box1 .icon {
+    line-height: 60px;
+    color: white;
+    font-size: 40px;
+}
+
+
+/* My Services Section */
+
+.image {
+    width: 100%;
+    height: 250px
+}
+
+.arrows-l {
+    color: white;
+    font-size: 75px;
+    opacity: 80%;
+    padding-left: 50%;
+}
+
+.arrows-r {
+    color: white;
+    font-size: 75px;
+    opacity: 80%;
+    padding-left: 40%;
+}
+
+.ar:hover {
+    cursor: pointer;
+}
+
+.ar .arrows-l:hover {
+    color: #f5d020;
+}
+
+.ar .arrows-r:hover {
+    color: #f5d020;
+}
+
+.tech_title {
+    color: aliceblue;
 }
