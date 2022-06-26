@@ -233,8 +233,6 @@
                         <br>
                         <h5>Java Developpement</h5>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat aperiam corporis, natus voluptatum ut tempore rem quo quos cumque dolorum ipsa, minima veritatis laudantium ipsum. Corrupti doloremque dolorum ipsa necessitatibus.</p>
-
-
                     </div>
 
                 </div>
@@ -246,10 +244,7 @@
                         <br>
                         <h5>DataBase Designer</h5>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat aperiam corporis, natus voluptatum ut tempore rem quo quos cumque dolorum ipsa, minima veritatis laudantium ipsum. Corrupti doloremque dolorum ipsa necessitatibus.</p>
-
-
                     </div>
-
                 </div>
             </div>
         </div>
@@ -272,8 +267,126 @@
         </div>
     </div>
     <br><br><br>
-
     <!--*********************-->
+    <!-- Contact Section  -->
+
+
+    <br><br><br>
+    <section>
+        <div class="container">
+            <div class="separated"></div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <h4>Whats your request ? get in touch</h4>
+                        <p class="text-white">
+                            always availbale for freelancing feel free to contact me!
+                        </p>
+                        <ul>
+                            <li class="media">
+                                <i class="fa fa-map">
+                                </i>
+                                <span class="media-body">
+                                    123 Street new york USA 45678
+                                </span>
+                            </li>
+                            <li class="media">
+                                <i class="fa fa-envelope">
+                                </i>
+                                <span class="media-body">
+                                    support@domain.com
+                                </span>
+                            </li>
+                            <li class="media">
+                                <i class="fa fa-phone">
+                                  
+                                </i>
+                                <span class="media-phone">
+                                    +48 571 414 071
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="contact-info">
+                        <h4>Say Something</h4>
+                        <form id="contact-form" action="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" id="name" class="form-control" placeholder="Name*" name="name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" id="email" class="form-control" placeholder="Email*" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" id="subject" class="form-control" placeholder="Subject*" name="subject">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea style="padding: 0;" rows="5" id="message" class="form-control" placeholder="Your Message*" name="message">
+
+                                        </textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="send">
+                                        <button class="btn-primary btn" type="submit" value="send">
+                                            Send message
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="separated container">
+        </div>
+        <br><br>
+    </section>
+    <!-- Google Map Section  -->
+    <div class="col-12">
+        <div class="google-map container">
+            <div class="embed-responsive embed">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.2899138894686!2d17.082393715569744!3d51.1031109795707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc29f938aa519%3A0x49d6a56f7b4855cd!2sEdwarda%20Wittiga%206%2C%2051-628%20Wroc%C5%82aw!5e0!3m2!1sen!2spl!4v1656245399021!5m2!1sen!2spl"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+    </div>
+    <div class="separated container">
+
+    </div>
+    <!-- Footer Section  -->
+    <br><br>
+    <footer class="footer text-white container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="nav justify-content-center justify-content-md-start">
+                        <a href=""><i class="fa-brands fa-facebook"></i> </a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-behance"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p>&copy;2022 Copyright all right reserved </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- **************** -->
     <!-- javaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script>
@@ -289,14 +402,29 @@
                 "./imgs/SPRING.png",
             ];
             $(document).on("ready", function() {
+
+                function autoChange() {
+                    setInterval(() => {
+                        var current = $("#image").attr("src");
+                        var current_index = images.indexOf(current);
+                        console.log("current index :" + current_index)
+                        switch (current_index) {
+                            case 5:
+                                $("#image").attr("src", images[0]);
+                                break;
+                            default:
+                                $("#image").attr("src", images[current_index + 1]);
+                                break;
+                        }
+                    }, 2500)
+                }
+
                 $('#arrow-right').on('click', function() {
+                    autoChange();
                     var current = $("#image").attr("src");
                     var current_index = images.indexOf(current);
                     console.log("current index :" + current_index)
                     switch (current_index) {
-                        // case 0:
-                        //     $("#image").attr("src", images[5]);
-                        //     break;
                         case 5:
                             $("#image").attr("src", images[0]);
                             break;
@@ -306,16 +434,15 @@
                     }
 
                 })
+
                 $('#arrow-left').on('click', function() {
+                    autoChange();
                     var current = $("#image").attr("src");
                     var current_index = images.indexOf(current);
                     switch (current_index) {
                         case 0:
                             $("#image").attr("src", images[5]);
                             break;
-                            // case 5:
-                            //     $("#image").attr("src", images[0]);
-                            //     break;
                         default:
                             $("#image").attr("src", images[current_index - 1]);
                             break;

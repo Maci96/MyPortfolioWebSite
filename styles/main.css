@@ -517,3 +517,116 @@ a {
 .tech_title {
     color: aliceblue;
 }
+
+
+/* Contact section */
+
+.contact-info {
+    font-family: "sans-serif"
+}
+
+.contact-info h4 {
+    font-size: 34px;
+    font-weight: 400;
+    color: white;
+}
+
+.contact-info p {
+    font-size: 16px;
+}
+
+.contact-info ul {
+    margin: 0;
+    padding: 10px 0 0;
+    list-style: none;
+}
+
+.contact-info li {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.3;
+    position: relative;
+}
+
+.contact-info li i {
+    width: 30px;
+    color: #ffc107;
+    font-size: 22px;
+    text-align: center;
+}
+
+.contact-info li span {
+    padding-left: 10px;
+}
+
+.contact-info li+li {
+    padding-top: 20px;
+}
+
+.contact-form h4 {
+    font-weight: 400;
+    color: rgb(31, 143, 115);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+form .form-control {
+    color: white;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    height: calc(2em +0.7rem+2px);
+}
+
+form .form-control:focus {
+    color: white;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    height: calc(2em +0.7rem+2px);
+}
+
+.contact-form textarea.form-control {
+    height: auto;
+}
+
+.btn-primary {
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    padding: 15px 30px;
+}
+
+.google-map {
+    margin-top: 50px;
+}
+
+.google-map .embed {
+    filter: grayscale(1);
+    -webkit-filter: grayscale();
+}
+
+.google-map .embed:before {
+    padding-top: 30%;
+}
+
+.footer .nav a {
+    font-size: 15px;
+    color: white;
+    margin: 17px;
+}
+
+.footer .nav a:hover {
+    color: #F5d020;
+}
+
+footer p {
+    color: white;
+    font-stretch: 14px;
+    margin: 0;
+}
